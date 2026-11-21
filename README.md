@@ -1,4 +1,9 @@
+**Live demo:** https://smartdesk-m56puz9qidv8fhxprsju6z.streamlit.app/
+
+*The demo uses a fictional business and limits messages per session to keep usage costs low.*
+
 ![SmartDesk screenshot](docs/screenshot.png)
+
 # SmartDesk: AI Customer Support Assistant
 
 SmartDesk answers customer questions using a business's own documents
