@@ -22,6 +22,11 @@ if "count" not in st.session_state:
     st.session_state.count = 0
 
 business_name = get_setting("BUSINESS_NAME", "this business")
+# TEMPORARY DEBUG: remove after fixing
+_key = get_setting("GEMINI_API_KEY") or ""
+st.sidebar.write("Key length:", len(_key))
+st.sidebar.write("Starts with:", _key[:4], "| Ends with:", _key[-2:])
+st.sidebar.write("Has space or quote:", any(c in _key for c in ' "\'\n'))
 
 st.title("SmartDesk")
 st.caption(f"AI customer support assistant for {business_name}")
