@@ -54,6 +54,7 @@ if st.button("Get reply"):
         except Exception as error:
             print(f"SmartDesk error: {error}")
             st.error("Something went wrong. Please try again in a moment.")
+            st.code(f"{type(error).__name__}: {error}")
             st.stop()
 
         st.session_state.count += 1
